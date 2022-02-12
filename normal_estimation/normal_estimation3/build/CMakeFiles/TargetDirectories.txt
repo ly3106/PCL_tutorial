@@ -1,0 +1,3 @@
+/home/bit202/桌面/normal_estimation3/build/CMakeFiles/edit_cache.dir
+/home/bit202/桌面/normal_estimation3/build/CMakeFiles/rebuild_cache.dir
+/home/bit202/桌面/normal_estimation3/build/CMakeFiles/normal_estimation3.dir
