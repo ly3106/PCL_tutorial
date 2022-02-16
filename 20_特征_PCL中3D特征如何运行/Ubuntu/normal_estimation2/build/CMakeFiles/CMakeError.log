@@ -1,0 +1,55 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/bit202/文档/PCL_tutorial/18_特征_PCL中3D特征如何运行/normal_estimation2/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_82c8d/fast"
+/usr/bin/make -f CMakeFiles/cmTC_82c8d.dir/build.make CMakeFiles/cmTC_82c8d.dir/build
+make[1]: Entering directory '/home/bit202/文档/PCL_tutorial/18_特征_PCL中3D特征如何运行/normal_estimation2/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_82c8d.dir/CheckSymbolExists.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_82c8d.dir/CheckSymbolExists.c.o   -c /home/bit202/文档/PCL_tutorial/18_特征_PCL中3D特征如何运行/normal_estimation2/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_82c8d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_82c8d.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_82c8d.dir/CheckSymbolExists.c.o  -o cmTC_82c8d -rdynamic 
+CMakeFiles/cmTC_82c8d.dir/CheckSymbolExists.c.o：在函数‘main’中：
+CheckSymbolExists.c:(.text+0x16)：对‘pthread_create’未定义的引用
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_82c8d.dir/build.make:97: recipe for target 'cmTC_82c8d' failed
+make[1]: *** [cmTC_82c8d] Error 1
+make[1]: Leaving directory '/home/bit202/文档/PCL_tutorial/18_特征_PCL中3D特征如何运行/normal_estimation2/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_82c8d/fast' failed
+make: *** [cmTC_82c8d/fast] Error 2
+
+File /home/bit202/文档/PCL_tutorial/18_特征_PCL中3D特征如何运行/normal_estimation2/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/bit202/文档/PCL_tutorial/18_特征_PCL中3D特征如何运行/normal_estimation2/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_45558/fast"
+/usr/bin/make -f CMakeFiles/cmTC_45558.dir/build.make CMakeFiles/cmTC_45558.dir/build
+make[1]: Entering directory '/home/bit202/文档/PCL_tutorial/18_特征_PCL中3D特征如何运行/normal_estimation2/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_45558.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_45558.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_45558
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_45558.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_45558.dir/CheckFunctionExists.c.o  -o cmTC_45558 -rdynamic -lpthreads 
+/usr/bin/ld: 找不到 -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_45558.dir/build.make:97: recipe for target 'cmTC_45558' failed
+make[1]: *** [cmTC_45558] Error 1
+make[1]: Leaving directory '/home/bit202/文档/PCL_tutorial/18_特征_PCL中3D特征如何运行/normal_estimation2/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_45558/fast' failed
+make: *** [cmTC_45558/fast] Error 2
+
+
