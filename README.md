@@ -15,4 +15,4 @@ PCL1.8 Win10 Visual Studio 2015
 
 ## 2.视频链接（Videos link）
 
-[https://space.bilibili.com/504859351/channel/seriesdetail?sid=536852](https://space.bilibili.com/504859351/channel/seriesdetail?sid=536852)
+B站视频：[https://space.bilibili.com/504859351/channel/seriesdetail?sid=536852](https://space.bilibili.com/504859351/channel/seriesdetail?sid=536852)
